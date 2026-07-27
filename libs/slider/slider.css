@@ -1,0 +1,182 @@
+.slideshow {
+    width: 98%;
+    max-width: 1500px;
+     height: 570px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.4);
+}
+
+.slideshow-2,
+.slideshow-3,
+.slideshow-4{
+    width:80%;
+    max-width:900px;
+    margin:40px auto;
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+    box-shadow:0 3px 6px rgba(0,0,0,.4);
+}
+
+.slideshow-2,
+.slideshow-3{
+    height:400px;
+}
+
+.slideshow-4{
+    height:500px;
+}
+
+.slides-box,
+.slide{
+    width:100%;
+    height:90%;
+}
+
+.slides-box .slide{
+    position:relative;
+}
+
+.slides-box .slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.slides-box .slide .title{
+    position:absolute;
+    left:40px;
+    top:40px;
+
+    background:rgba(255,255,255,.7);
+    padding:20px 35px;
+
+    font-size:24px;
+    font-weight:bold;
+    line-height:1.5;
+
+    border-radius:15px 0 15px 0;
+    z-index:10;
+}
+
+.slides-box .slide .title a{
+    color:#000;
+    text-decoration:none;
+}
+
+.slideshow-buttons{
+    position:absolute;
+    left:0;
+    bottom:20px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    z-index:20;
+}
+
+.slideshow-buttons div{
+    color:#fff;
+    font-size:32px;
+    cursor:pointer;
+    transition:.3s;
+    text-shadow:1px 1px 4px #000;
+}
+
+.slideshow-buttons div:hover{
+    transform:scale(1.15);
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+    .slideshow{
+        height:500px;
+    }
+
+    .slides-box .slide .title a{
+        left:25px;
+        top:25px;
+        padding:14px 24px;
+        font-size:15px;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+    .slideshow{
+        height:350px;
+        border-radius:10px;
+    }
+
+    .slides-box .slide .title{
+        left:15px;
+        top:15px;
+        padding:12px 18px;
+        font-size:17px;
+        max-width:80%;
+    }
+
+    .slideshow-buttons div{
+        font-size:26px;
+    }
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+    .slideshow{
+        height:250px;
+    }
+
+       .slides-box .slide .title {
+        left:10px;
+        top:15px;
+        padding: 0px;
+        font-size:4px;
+       
+    }
+
+
+    .slideshow-buttons{
+        bottom:10px;
+    }
+
+    .slideshow-buttons div{
+        font-size:22px;
+    }
+
+}
+@media (max-width:376px){
+ .slides-box .slide .title {
+      display: none;
+        
+       
+        
+}
+
+}
+@media (max-width:376px){
+.slides-box .slide .title {
+    display: none;
+}
+
+ .slides-box .slide .title {
+        left:10px;
+        top:15px;
+        padding: -10px;
+        font-size:small;
+       
+    }
+}
